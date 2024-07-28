@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: eos-gateway-api
-        image: docker.io/dpthub/eos-gateway-api:latest
+        image: docker.io/qwerty703/eos-gateway-api:latest
         ports:
         - containerPort: 5555
