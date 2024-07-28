@@ -36,7 +36,7 @@ podTemplate(label: label, yaml: """
 ) {
     node (label) {
         stage ('Checkout SCM'){
-          git credentialsId: 'git', url: '', branch: 'master'
+          git credentialsId: 'git', url: 'https://github.com/prpd1/eos-gateway-api.git', branch: 'main'
           container('build') {
                 stage('Build a Maven project') {
                   //withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
